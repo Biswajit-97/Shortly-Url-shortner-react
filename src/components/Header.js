@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../assets/main.css'
+import Navbar from './Navbar';
 
 function Header() {
+
+  const [active, setActive] = useState(false);
+
     return (
         <div>
             <header>
@@ -15,30 +19,37 @@ function Header() {
                 </div>
 
                 <nav>
-      <div className="nav-container">
+                  <div className="nav-container">
 
-        <ul className="nav-links">
-          <li className="nav-link">
-            <a href="#">Features</a>
-          </li>
-          <li className="nav-link">
-            <a href="#">Pricing</a>
-          </li>
-          <li className="nav-link">
-            <a href="#">Resources</a>
-          </li>
-        </ul>
+                    <ul className="nav-links">
+                      <li className="nav-link">
+                        <a href="#">Features</a>
+                      </li>
+                      <li className="nav-link">
+                        <a href="#">Pricing</a>
+                      </li>
+                      <li className="nav-link">
+                        <a href="#">Resources</a>
+                      </li>
+                    </ul>
 
-        <ul className="user-login">
-          <li className="nav-link">
-            <a className="login" href="#">Login</a>
-          </li>
-          <li>
-            <a className="nav-link sign-up" href="#">Sign Up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                    <ul className="user-login">
+                      <li className="nav-link">
+                        <a className="login" href="#">Login</a>
+                      </li>
+                      <li>
+                        <a className="nav-link sign-up" href="#">Sign Up</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+                <Navbar active={active} />
+                
+                <div className="menu-btn" onClick={() => setActive(!active)} >
+                  <span className="btn-line"></span>
+                </div>
+              
             </header>
         </div>
     )

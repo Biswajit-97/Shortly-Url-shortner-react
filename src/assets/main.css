@@ -702,7 +702,7 @@ footer .social-links .social-link:hover .social-icon {
 
 /* Media Queries */
 /* large Phones */
-@media screen and (min-width: 538px) and (max-width: 767px) {
+@media screen and (min-width: 338px) and (max-width: 767px) {
   .hero {
     display: -ms-grid;
     display: grid;
@@ -726,8 +726,12 @@ footer .social-links .social-link:hover .social-icon {
   .link__output__address {
     padding: 1rem 2rem;
   }
+  .link__output__address p {
+    font-size: 0.8rem;
+  }
   .link__output__result {
     padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -802,6 +806,18 @@ footer .social-links .social-link:hover .social-icon {
     width: 350px;
     margin-bottom: 20px;
   }
+  .link__output {
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem 0;
+  }
+  .link__output__address {
+    padding: 1rem 2rem;
+  }
+  .link__output__result {
+    padding: 1rem 2rem;
+  }
+
   /* Tablet - CTA section */
   .cta {
     background-image: url(./images/bg-boost-desktop.svg);

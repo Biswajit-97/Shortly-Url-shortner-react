@@ -1,0 +1,65 @@
+@media (max-width: 756px) {
+  .navbar {
+    position: fixed;
+    top: 12%;
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    background: hsl(257, 27%, 26%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(102%);
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .navbar-open {
+    opacity: 1;
+    transform: translateX(-62%);
+  }
+
+  .navbar ul {
+    margin: 1rem auto 0 auto;
+    width: 90%;
+    list-style: none;
+  }
+
+  .navbar li {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .navbar li a {
+    font-size: 1.4rem;
+  }
+
+  .navbar .line {
+    width: 90%;
+    margin: 0 auto;
+    background: hsl(255, 11%, 22%);
+    height: 1px;
+  }
+
+  .navbar #signup-button {
+    width: 100%;
+    color: #fff;
+    background: hsl(180, 66%, 49%);
+    height: 7vh;
+    border-radius: 50px;
+    line-height: 7vh;
+    cursor: pointer;
+  }
+
+  .navbar #signup-button:hover {
+    background: hsl(180, 53%, 75%);
+  }
+}
+
+.navbar {
+  display: none;
+}
