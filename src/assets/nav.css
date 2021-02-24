@@ -22,30 +22,30 @@
     transform: translateX(-62%);
   }
 
-  .navbar ul {
+  #navbar ul {
     margin: 1rem auto 0 auto;
     width: 90%;
     list-style: none;
   }
 
-  .navbar li {
+  #navbar li {
     font-weight: 700;
     color: #fff;
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  .navbar li a {
+  #navbar li a {
     font-size: 1.4rem;
   }
 
-  .navbar .line {
+  #navbar .line {
     width: 90%;
     margin: 0 auto;
     background: hsl(255, 11%, 22%);
     height: 1px;
   }
 
-  .navbar #signup-button {
+  #navbar #signup-button {
     width: 100%;
     color: #fff;
     background: hsl(180, 66%, 49%);
@@ -55,11 +55,11 @@
     cursor: pointer;
   }
 
-  .navbar #signup-button:hover {
+  #navbar #signup-button:hover {
     background: hsl(180, 53%, 75%);
   }
 }
 
-.navbar {
+#navbar {
   display: none;
 }

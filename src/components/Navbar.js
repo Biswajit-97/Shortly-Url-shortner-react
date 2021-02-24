@@ -4,7 +4,7 @@ import '../assets/nav.css'
 function Navbar({active}) {
     return (
         <div>
-            <nav id="navbar" className= {active ? "navbar-open" : "navbar"}>
+            <nav id="navbar" className= {active ? "navbar-open" : null}>
               <ul className="menu-list">
                 <li>
                   <a href="#" target="_blank">
